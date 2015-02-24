@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+
+
+    <style>
+     
+        body{
+            background-image: url(bg-full.jpg);
+            background-repeat: repeat-x;
+            height: 2000px;
+        }
+        #people{
+            position:fixed;
+            left: 50%;
+            transform: translate(-50%,0);
+            top: 400px;
+            z-index:500;
+            
+        }
+        #ground{
+            position: fixed;
+            left: 50%;
+            transform: translate(-50%,0);
+            top: 440px;
+            z-index: 480;
+        }
+        
+        
+        
+    </style>
+
+</head>
+
+<body>
+    <img id="people" src="jando.png" />
+    <img id="ground" src="scene01-ground.png"
+         
+         data-0="transform:translate3d(-50%,0px,0px);"
+         data-500="transform: translate3d(-50%, -1000px,0px);"
+         
+         
+         >
+
+</body>
+    <script src = "skrollr.min.js"></script>
+    <script>
+    var s = skrollr.init();
+    </script>
+
+</html>
